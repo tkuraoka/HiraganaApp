@@ -1,0 +1,6 @@
+framework module Pods_HiraganaChangeApp {
+  umbrella header "Pods-HiraganaChangeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

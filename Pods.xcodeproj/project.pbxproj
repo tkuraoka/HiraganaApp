@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D575C8F225A42040168B8580D7CEE1 /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = 214CBCABBD87FA7A4C96701AC84AF16C /* ccbord.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0EDED454CD723B8AAE762A605FA9C701 /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3247DE914727BF9E07345110D48AA2 /* bmf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0FEDE5D39B327CF80B7E9BD581ACC76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		16FDE71535603ACDAFC35170A1E14370 /* SwiftyTesseract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A783169A21B0A50AACE059ED7D918E /* SwiftyTesseract.swift */; };
+		199AEA4A791F7D9BD13FB08A838EDD3A /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6210A8EA250ED549C1D72E17CB1E46 /* publictypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1AD781F0E8038C3EB5241C0B6B59D620 /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F282AC79CF8FB7CA54318C374E315A /* pngconf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1D0E6626C3DF603C02919934589745A4 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB5012A5B95ADB69F2D67945D4A181A /* platform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		22A165C0CAE7878CE54C5CCF083F4A2E /* rbtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0296B642BF6589F8A491A218C972D889 /* rbtree.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		244697D0F1B7003CA452AF4E06959B55 /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = D546AAAAC99A4E7ECA5D3D3AF945BC70 /* renderer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		27662C42DF74AAA15565B5196E0D9ED2 /* strngs.h in Headers */ = {isa = PBXBuildFile; fileRef = CF4246D4FFC6E044ACB0D87218231ED6 /* strngs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2AC2BA05B1063BF8F6BCBF0968A2F7D8 /* serialis.h in Headers */ = {isa = PBXBuildFile; fileRef = 26A13299C59FB1067470FCA4F85AE32F /* serialis.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2B106EFF951EBEA0FF94281ED80A30B4 /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7A89FE6C79604E5AF5327713D30AA8 /* heap.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2B512754974B944596378E4CAE48348E /* EngineMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545252AF0632391D249235B132A6EEB0 /* EngineMode.swift */; };
+		34F86C4B043E7852A3EF41D9B1FC80F4 /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5658C93B78BF6536F4025187A22F78 /* morph.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		356B3AC29353AADFBAA8CF5B8E7C8722 /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A49BB535B8CBA5B0DDF75393751ECC /* recog.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		35B549A36F10451343C4FBE5254C1BE9 /* RecognizedBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D632D071FC825123CFB23326D8F59E39 /* RecognizedBlock.swift */; };
+		37BEF23F4B2049217AFEEFA1FAC15FF8 /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = 58ECCA135F32A0B5E25E4E008F2D7EA2 /* sudoku.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3914AE7892E0DB25196362A6CC9923E5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164CAC5CFDEA366128014CB379B92F52 /* String+Extensions.swift */; };
+		421C8AFDAE630B9097DF79E63016AAFB /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8EAA022AB03BE403B67CA72FCA3B7F /* gplot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		42729E1C419A73A3DAD57DC016C4C23A /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 255B208A3B5A62953A44174D336209EE /* bmp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		440FE2B03F4779E8FA0CA7FDF697D821 /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = B7853823A4058EB1EE3AB4CD668ECF75 /* jmorecfg.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		44B64A745B1FD8412877004835564237 /* SwiftyTesseract-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1679A5EA1E5B25EEFBDC9066D5B76E88 /* SwiftyTesseract-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F2BBC7E12948AFB70C62D7FD94377A /* Bundle+pathToTrainedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5555125BF753D51F53E0E7D2395F4F28 /* Bundle+pathToTrainedData.swift */; };
+		4C3D76401BA05EE8E38C853ED9E6F256 /* tiffvers.h in Headers */ = {isa = PBXBuildFile; fileRef = 00EF6822A071411F13546B208AB00175 /* tiffvers.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4F7F501F3844F12D9E469E7CE3C26FD8 /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE91C8BFAEAA1FB12AD9C44BE2D334E /* ptra.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		54E8F3F79732BDB75391BA14ABDAFDA5 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 08903A1D416037A98826F2084969A9B5 /* pnglibconf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		58B492A278EF1C484C91EED9850B8E0D /* LanguageStringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E1102C55A6341209B94CCAC9C390A /* LanguageStringConverter.swift */; };
+		58B75C2BF14C7D6812C20104D45073F8 /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = 996F7B6BC66D88A2495FB9C2D5AC0730 /* watershed.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6B600105D57454B433EA2B23F3251D66 /* helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE65DA990FC6B29083B7B56DB301990 /* helpers.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6D0E2454EFDB58A661E5E9ED6FE22354 /* genericvector.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CEE9B2BF1E972B34653481D2A1D7DE /* genericvector.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		70F0B373150B140E4C5146FE656906A8 /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 7723ABA28E9F6E6C8009FBE5FD802AE7 /* allheaders.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		72F0225A3C905CF3B4B69739A2392F52 /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E08A9B3538F58FB253E734D6AF41C3 /* osdetect.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		81D568880BCCC5D0B4C9948E6BDE11C1 /* apitypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F59B98833E4E33A52008769D6CAAC55F /* apitypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		86F1E48DDBBCA77850C8159DA7772E06 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7078ED2FB29A5EBAC95782BCC85F37BA /* stack.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8B2DD460AF59B56F6A5F9219B1123AF6 /* thresholder.h in Headers */ = {isa = PBXBuildFile; fileRef = E29CAB942387E048796FCA716FC0E18C /* thresholder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8D799CC9894026986F23F7E9187F43C2 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = C6547939AA73B13D68AF7E3462168480 /* png.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		919446D64B5BE55BCAEB626FF2D798D5 /* dewarp.h in Headers */ = {isa = PBXBuildFile; fileRef = DA48AF268E8F236A5C0F3615A1E5103A /* dewarp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		976CC62C8BE838C9925B23374BD7625A /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B953F0521443980230ABA153B273BA8 /* queue.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		97EFDE8D797B96B1CE5CB9444445E80E /* RecognitionLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76E328C906E98F8601069BDDCE308CD /* RecognitionLanguage.swift */; };
+		989394A93F0491C9872C63109165B0A0 /* SwiftyTesseractError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A916ADDB34AC1658F5A26B7AFC3ABB13 /* SwiftyTesseractError.swift */; };
+		9B592D98CAE560D191FD68BD203C8DC3 /* tesscallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 5675AA9D760E53AB9DCFDDA76EACF560 /* tesscallback.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EDA13DB303B93F4A2B6E1C5EC935E2E /* Pods-HiraganaChangeApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F856035A0309A5514A96713A8A62A /* Pods-HiraganaChangeApp-dummy.m */; };
+		A03ABA4E99AF27B5ABE1543785A33E0C /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A0C0C5FBC7AEFE224976BF067A8910 /* endianness.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A16A07BEEA3B76EFF654F69F865BA8B8 /* tiff.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D16A992FF4BB529F26D4703FDBE28F /* tiff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A3222935AF8A15234FDFC4ABE1A71FEC /* LanguageModelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04DB1C39B6BF5A54D64D9023E91787D /* LanguageModelDataSource.swift */; };
+		A4F3E2FC5063C4F3602ACDB13E315713 /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D77EEF3E8BE4C8C063972506097E44 /* unichar.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A70FF843DF493782404BD78611DC7E3B /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = F3048838180E5743D80F999DFA3DA3A1 /* jpeglib.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A754A85E76693D7E16823E9DB8B8AB0C /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F894FAEA5193C57F937F4ABC3C18D7 /* jconfig.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A87FDF021D45D0B1F5C36447FAD41B0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		AB7F1C7D67867968A8BB6A01EC90DD64 /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B55143A8EEFCCA89E8F12F9CD5E0136 /* pageiterator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B11875741D553F29E193E3890CD16B89 /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = BA744130DA9A35D455F2DEB40165A68A /* regutils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B16BAC0F68CF54A30F067F7E5F00E0A4 /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = ED87D1CDA179298004F0B26A506596CF /* ltrresultiterator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B4946CF847BA67510D1FDB9399A02C4E /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = AA899C17D45372773E85908F3EE11EE1 /* leptwin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B787A05CA157DEAE9E2AD1C3851F44AD /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 981D0F5E0FC7168A4373B9320BFDA665 /* alltypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BCCDBA6A0EE034D5C9F975E61F5FA456 /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 47EC3D6F0A09DC77C317499C5E4E413C /* readbarcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BCF977892C2AA6D66A6A953BDC527641 /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0A4A03DE813B798FD8E169A790F9D8 /* jbclass.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BD9237A4DDA1F216437F8BCC2CC97B6C /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B234778BA3D22AADB994DEE5428B4E9 /* baseapi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BE4150D98B1C26C9303206B7F4DA09D1 /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C1C4DD977AE0620297C4646254C404DD /* bbuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C03CD211C75519D4F15BB6DF1F1FB255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		C3444BDA4982E3239098FE7B42C6C390 /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0A22AB67F3A9AE6C88AE414B384539 /* arrayaccess.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CEC3D47F1098FE57B9A1106ECFF02883 /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = F767BBEC0102F4EF34181A0394A9DE9E /* environ.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CFE722B06F0632206EE9F6AE3B374AB9 /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7881D27D0D55D87DEB51E05AB21283 /* resultiterator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D96151D34C384B696FB3D7576EBBC1C7 /* SwiftyTesseract.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B5CEC0C5125679318FC36BD9BA8913 /* SwiftyTesseract.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D965461CAC305934538EA744E18767EE /* Pods-HiraganaChangeApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8001BF8AA25F1F6F191EFF23236C02 /* Pods-HiraganaChangeApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB077EB9830CCC41EA46B3B8D55997FF /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B75BE5275D2C485477DB438E350723 /* stringcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DEB8275C4958336C6824C344D1E6C792 /* tiffio.h in Headers */ = {isa = PBXBuildFile; fileRef = E8D93DFEB224ECD505BAE5685EED3498 /* tiffio.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E00065A984D90D4663535711B1B8F42F /* TesseractVariableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C5C52749D25CF0C8BD8FD83B87D71C /* TesseractVariableName.swift */; };
+		E0C0CEE594FECF517EE6554402E39D08 /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = 302A31B1ED7BD69465ACD09FD1EF555F /* pix.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E354F75982EB74FBB009333ECBE9D4BC /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C4992FD5C498D74BE94FFDF48358A3 /* imageio.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E5BB087F887F6666EC86424527965D1A /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = 01BF8AAD561DD023C59BAB3D978BF86B /* jerror.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E753AC3306AFC3D73F413872F2377073 /* SwiftyTesseract-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA940D6D1E36E1D5977F652523B66CA6 /* SwiftyTesseract-dummy.m */; };
+		E87F29B9B8A0EBDEFDD66222E655059A /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F46F8D0814BB4A951A58D57A2C242823 /* ocrclass.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EA4A1BA30F024245103E9862A90DAF40 /* tess_version.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EDAF534A6246652C3AE6D6B3195603 /* tess_version.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F16B863CC7ED043E48C54D1AC5CBC92F /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = 991364C8D64E9FED04431DFC0C900ECD /* capi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F7EACED21E5EDB96A670438D840BE67F /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = 365000623656F02533E7F18EFE0D3F3A /* array.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F919D320010C3EF2C47934B50E2B37D5 /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = EB227E390C537D4A8285E48C872CAB46 /* tiffconf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FA2A991ED2E349B550B46552E0222C48 /* ResultIteratorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACF21F0519D476F88E8E3297400A2F /* ResultIteratorLevel.swift */; };
+		FA89642AF7EF48B1FE5B2AB27CEA13AD /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D0DDFE57A4DE7F1008BD0B9A370F5 /* list.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FBE615106986D6B2CD8E5ACC43B08498 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7684CDA8DD3C242D0E117F97504D768 /* BoundingBox.swift */; };
+		FCFB038FF2CD6E0007785BE18791BC0D /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6424E0EF376D93515F7178C25A11A1 /* bilateral.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FF547E8DAF527CD69700DB35224EE92B /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2093BB4E261EBEB4ECAA203B9AB0DE /* bmfdata.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79C5FE5366D7A5E9989E9C3D75F3C6AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FDA8701204211983085669C4E12E6FE;
+			remoteInfo = SwiftyTesseract;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EF6822A071411F13546B208AB00175 /* tiffvers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tiffvers.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tiffvers.h; sourceTree = "<group>"; };
+		01BF8AAD561DD023C59BAB3D978BF86B /* jerror.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jerror.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/jerror.h; sourceTree = "<group>"; };
+		0296B642BF6589F8A491A218C972D889 /* rbtree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rbtree.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/rbtree.h; sourceTree = "<group>"; };
+		06B5CEC0C5125679318FC36BD9BA8913 /* SwiftyTesseract.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyTesseract.h; path = SwiftyTesseract/SwiftyTesseract/SwiftyTesseract.h; sourceTree = "<group>"; };
+		08903A1D416037A98826F2084969A9B5 /* pnglibconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pnglibconf.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/pnglibconf.h; sourceTree = "<group>"; };
+		14CCF305F36EED361EAB72E7A0C77FB8 /* Pods-HiraganaChangeApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HiraganaChangeApp.modulemap"; sourceTree = "<group>"; };
+		164CAC5CFDEA366128014CB379B92F52 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "SwiftyTesseract/SwiftyTesseract/Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
+		1679A5EA1E5B25EEFBDC9066D5B76E88 /* SwiftyTesseract-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTesseract-umbrella.h"; sourceTree = "<group>"; };
+		18CEE9B2BF1E972B34653481D2A1D7DE /* genericvector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = genericvector.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/genericvector.h; sourceTree = "<group>"; };
+		1A1E1102C55A6341209B94CCAC9C390A /* LanguageStringConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageStringConverter.swift; path = SwiftyTesseract/SwiftyTesseract/Protocols/LanguageStringConverter.swift; sourceTree = "<group>"; };
+		1C2296062D2D030526AB426399B3145B /* Pods_HiraganaChangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HiraganaChangeApp.framework; path = "Pods-HiraganaChangeApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC392BB007E43B1A7D03EE7C70134C8 /* Pods-HiraganaChangeApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiraganaChangeApp-Info.plist"; sourceTree = "<group>"; };
+		214CBCABBD87FA7A4C96701AC84AF16C /* ccbord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ccbord.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/ccbord.h; sourceTree = "<group>"; };
+		255B208A3B5A62953A44174D336209EE /* bmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmp.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/bmp.h; sourceTree = "<group>"; };
+		26A13299C59FB1067470FCA4F85AE32F /* serialis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = serialis.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/serialis.h; sourceTree = "<group>"; };
+		2B55143A8EEFCCA89E8F12F9CD5E0136 /* pageiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pageiterator.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/pageiterator.h; sourceTree = "<group>"; };
+		302A31B1ED7BD69465ACD09FD1EF555F /* pix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pix.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/pix.h; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		365000623656F02533E7F18EFE0D3F3A /* array.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = array.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/array.h; sourceTree = "<group>"; };
+		39E894375B66267ED4EE4613597ABD08 /* SwiftyTesseract.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyTesseract.modulemap; sourceTree = "<group>"; };
+		3B234778BA3D22AADB994DEE5428B4E9 /* baseapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = baseapi.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/baseapi.h; sourceTree = "<group>"; };
+		3B953F0521443980230ABA153B273BA8 /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/queue.h; sourceTree = "<group>"; };
+		3F6210A8EA250ED549C1D72E17CB1E46 /* publictypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = publictypes.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/publictypes.h; sourceTree = "<group>"; };
+		409782F8EFDE6EAC1F98ABBCBCB1E75F /* SwiftyTesseract.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyTesseract.xcconfig; sourceTree = "<group>"; };
+		41E84A502080DD51E6C3B291540D49C6 /* Pods-HiraganaChangeApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HiraganaChangeApp-frameworks.sh"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4445B06ADACDB513B8E7E00136D33F80 /* Pods-HiraganaChangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiraganaChangeApp.release.xcconfig"; sourceTree = "<group>"; };
+		45061311AE9546CFA5EF9313E64FFAC2 /* libtiff.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libtiff.a; path = SwiftyTesseract/SwiftyTesseract/dependencies/lib/libtiff.a; sourceTree = "<group>"; };
+		469F856035A0309A5514A96713A8A62A /* Pods-HiraganaChangeApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HiraganaChangeApp-dummy.m"; sourceTree = "<group>"; };
+		47E08A9B3538F58FB253E734D6AF41C3 /* osdetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = osdetect.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/osdetect.h; sourceTree = "<group>"; };
+		47EC3D6F0A09DC77C317499C5E4E413C /* readbarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = readbarcode.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/readbarcode.h; sourceTree = "<group>"; };
+		4A0A4A03DE813B798FD8E169A790F9D8 /* jbclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jbclass.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/jbclass.h; sourceTree = "<group>"; };
+		4A7A89FE6C79604E5AF5327713D30AA8 /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = heap.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/heap.h; sourceTree = "<group>"; };
+		4D6424E0EF376D93515F7178C25A11A1 /* bilateral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bilateral.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/bilateral.h; sourceTree = "<group>"; };
+		4EE65DA990FC6B29083B7B56DB301990 /* helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = helpers.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/helpers.h; sourceTree = "<group>"; };
+		545252AF0632391D249235B132A6EEB0 /* EngineMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EngineMode.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/EngineMode.swift; sourceTree = "<group>"; };
+		5555125BF753D51F53E0E7D2395F4F28 /* Bundle+pathToTrainedData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+pathToTrainedData.swift"; path = "SwiftyTesseract/SwiftyTesseract/Extensions/Bundle+pathToTrainedData.swift"; sourceTree = "<group>"; };
+		5675AA9D760E53AB9DCFDDA76EACF560 /* tesscallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tesscallback.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/tesscallback.h; sourceTree = "<group>"; };
+		57854CF38561D4FC5A3BD4DD6684C2BC /* Pods-HiraganaChangeApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiraganaChangeApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		58B75BE5275D2C485477DB438E350723 /* stringcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stringcode.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/stringcode.h; sourceTree = "<group>"; };
+		58ECCA135F32A0B5E25E4E008F2D7EA2 /* sudoku.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sudoku.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/sudoku.h; sourceTree = "<group>"; };
+		5A5658C93B78BF6536F4025187A22F78 /* morph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = morph.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/morph.h; sourceTree = "<group>"; };
+		65D77EEF3E8BE4C8C063972506097E44 /* unichar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unichar.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/unichar.h; sourceTree = "<group>"; };
+		7078ED2FB29A5EBAC95782BCC85F37BA /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/stack.h; sourceTree = "<group>"; };
+		75F282AC79CF8FB7CA54318C374E315A /* pngconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pngconf.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/pngconf.h; sourceTree = "<group>"; };
+		7723ABA28E9F6E6C8009FBE5FD802AE7 /* allheaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = allheaders.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/allheaders.h; sourceTree = "<group>"; };
+		7BE91C8BFAEAA1FB12AD9C44BE2D334E /* ptra.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ptra.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/ptra.h; sourceTree = "<group>"; };
+		83A783169A21B0A50AACE059ED7D918E /* SwiftyTesseract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyTesseract.swift; path = SwiftyTesseract/SwiftyTesseract/SwiftyTesseract.swift; sourceTree = "<group>"; };
+		88F894FAEA5193C57F937F4ABC3C18D7 /* jconfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jconfig.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/jconfig.h; sourceTree = "<group>"; };
+		89A0C0C5FBC7AEFE224976BF067A8910 /* endianness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = endianness.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/endianness.h; sourceTree = "<group>"; };
+		8AACF21F0519D476F88E8E3297400A2F /* ResultIteratorLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultIteratorLevel.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/ResultIteratorLevel.swift; sourceTree = "<group>"; };
+		981D0F5E0FC7168A4373B9320BFDA665 /* alltypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alltypes.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/alltypes.h; sourceTree = "<group>"; };
+		991364C8D64E9FED04431DFC0C900ECD /* capi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = capi.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/capi.h; sourceTree = "<group>"; };
+		996F7B6BC66D88A2495FB9C2D5AC0730 /* watershed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = watershed.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/watershed.h; sourceTree = "<group>"; };
+		9CB5012A5B95ADB69F2D67945D4A181A /* platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = platform.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/platform.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A01B5DEBA70619436FA454D55E8586C7 /* Pods-HiraganaChangeApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HiraganaChangeApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A1E7AFA29FB65E88CC95F56416BCE03C /* SwiftyTesseract-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyTesseract-prefix.pch"; sourceTree = "<group>"; };
+		A489015A9AFE90BFF438BCA38F1916C8 /* liblept.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblept.a; path = SwiftyTesseract/SwiftyTesseract/dependencies/lib/liblept.a; sourceTree = "<group>"; };
+		A5D16A992FF4BB529F26D4703FDBE28F /* tiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tiff.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tiff.h; sourceTree = "<group>"; };
+		A916ADDB34AC1658F5A26B7AFC3ABB13 /* SwiftyTesseractError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyTesseractError.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/SwiftyTesseractError.swift; sourceTree = "<group>"; };
+		AA3247DE914727BF9E07345110D48AA2 /* bmf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmf.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/bmf.h; sourceTree = "<group>"; };
+		AA899C17D45372773E85908F3EE11EE1 /* leptwin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = leptwin.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/leptwin.h; sourceTree = "<group>"; };
+		B1CD3B4179F9521D5D5E762B3F4B0616 /* libtesseract.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libtesseract.a; path = SwiftyTesseract/SwiftyTesseract/dependencies/lib/libtesseract.a; sourceTree = "<group>"; };
+		B3F4E4BAD9FD89E370C6B4F394691315 /* SwiftyTesseract-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyTesseract-Info.plist"; sourceTree = "<group>"; };
+		B7853823A4058EB1EE3AB4CD668ECF75 /* jmorecfg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jmorecfg.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/jmorecfg.h; sourceTree = "<group>"; };
+		B7EDAF534A6246652C3AE6D6B3195603 /* tess_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tess_version.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/tess_version.h; sourceTree = "<group>"; };
+		B8C4992FD5C498D74BE94FFDF48358A3 /* imageio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imageio.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/imageio.h; sourceTree = "<group>"; };
+		BA744130DA9A35D455F2DEB40165A68A /* regutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = regutils.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/regutils.h; sourceTree = "<group>"; };
+		BC8EAA022AB03BE403B67CA72FCA3B7F /* gplot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gplot.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/gplot.h; sourceTree = "<group>"; };
+		BE5388F406DC30436A8D3A6C2F6A63FC /* Pods-HiraganaChangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiraganaChangeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C4DD977AE0620297C4646254C404DD /* bbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bbuffer.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/bbuffer.h; sourceTree = "<group>"; };
+		C1C5C52749D25CF0C8BD8FD83B87D71C /* TesseractVariableName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TesseractVariableName.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/TesseractVariableName.swift; sourceTree = "<group>"; };
+		C6547939AA73B13D68AF7E3462168480 /* png.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = png.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/png.h; sourceTree = "<group>"; };
+		C76E328C906E98F8601069BDDCE308CD /* RecognitionLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionLanguage.swift; path = SwiftyTesseract/SwiftyTesseract/Enums/RecognitionLanguage.swift; sourceTree = "<group>"; };
+		CA940D6D1E36E1D5977F652523B66CA6 /* SwiftyTesseract-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyTesseract-dummy.m"; sourceTree = "<group>"; };
+		CB777A5A24128CD6654E253394367CAB /* libjpeg.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libjpeg.a; path = SwiftyTesseract/SwiftyTesseract/dependencies/lib/libjpeg.a; sourceTree = "<group>"; };
+		CF4246D4FFC6E044ACB0D87218231ED6 /* strngs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strngs.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/strngs.h; sourceTree = "<group>"; };
+		D546AAAAC99A4E7ECA5D3D3AF945BC70 /* renderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = renderer.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/renderer.h; sourceTree = "<group>"; };
+		D632D071FC825123CFB23326D8F59E39 /* RecognizedBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizedBlock.swift; path = SwiftyTesseract/SwiftyTesseract/Structs/RecognizedBlock.swift; sourceTree = "<group>"; };
+		DA48AF268E8F236A5C0F3615A1E5103A /* dewarp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dewarp.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/dewarp.h; sourceTree = "<group>"; };
+		DD2093BB4E261EBEB4ECAA203B9AB0DE /* bmfdata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmfdata.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/bmfdata.h; sourceTree = "<group>"; };
+		DE8001BF8AA25F1F6F191EFF23236C02 /* Pods-HiraganaChangeApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HiraganaChangeApp-umbrella.h"; sourceTree = "<group>"; };
+		DF0A22AB67F3A9AE6C88AE414B384539 /* arrayaccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arrayaccess.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/arrayaccess.h; sourceTree = "<group>"; };
+		E29CAB942387E048796FCA716FC0E18C /* thresholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thresholder.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/thresholder.h; sourceTree = "<group>"; };
+		E8D93DFEB224ECD505BAE5685EED3498 /* tiffio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tiffio.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tiffio.h; sourceTree = "<group>"; };
+		EB227E390C537D4A8285E48C872CAB46 /* tiffconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tiffconf.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tiffconf.h; sourceTree = "<group>"; };
+		ED87D1CDA179298004F0B26A506596CF /* ltrresultiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ltrresultiterator.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/ltrresultiterator.h; sourceTree = "<group>"; };
+		F04DB1C39B6BF5A54D64D9023E91787D /* LanguageModelDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageModelDataSource.swift; path = SwiftyTesseract/SwiftyTesseract/Protocols/LanguageModelDataSource.swift; sourceTree = "<group>"; };
+		F1A49BB535B8CBA5B0DDF75393751ECC /* recog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = recog.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/recog.h; sourceTree = "<group>"; };
+		F3048838180E5743D80F999DFA3DA3A1 /* jpeglib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jpeglib.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/jpeglib.h; sourceTree = "<group>"; };
+		F35D0DDFE57A4DE7F1008BD0B9A370F5 /* list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/list.h; sourceTree = "<group>"; };
+		F46F8D0814BB4A951A58D57A2C242823 /* ocrclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrclass.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/ocrclass.h; sourceTree = "<group>"; };
+		F59B98833E4E33A52008769D6CAAC55F /* apitypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = apitypes.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/apitypes.h; sourceTree = "<group>"; };
+		F6A6C5338C4ED5C736E8E9EAC0A8385D /* libpng.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libpng.a; path = SwiftyTesseract/SwiftyTesseract/dependencies/lib/libpng.a; sourceTree = "<group>"; };
+		F6E3B8BC238866073523ED9347EED4C6 /* SwiftyTesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyTesseract.framework; path = SwiftyTesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F767BBEC0102F4EF34181A0394A9DE9E /* environ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = environ.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/leptonica/environ.h; sourceTree = "<group>"; };
+		F7684CDA8DD3C242D0E117F97504D768 /* BoundingBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = SwiftyTesseract/SwiftyTesseract/Structs/BoundingBox.swift; sourceTree = "<group>"; };
+		FE7881D27D0D55D87DEB51E05AB21283 /* resultiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resultiterator.h; path = SwiftyTesseract/SwiftyTesseract/dependencies/include/tesseract/resultiterator.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09167016A58C8E9EE2F5E618C553F757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03CD211C75519D4F15BB6DF1F1FB255 /* Foundation.framework in Frameworks */,
+				A87FDF021D45D0B1F5C36447FAD41B0D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EF8337AB58D4571D7E91B62EB1708A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEDE5D39B327CF80B7E9BD581ACC76C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4262776A9FA9B741054DD73320EDD660 /* Pods-HiraganaChangeApp */ = {
+			isa = PBXGroup;
+			children = (
+				14CCF305F36EED361EAB72E7A0C77FB8 /* Pods-HiraganaChangeApp.modulemap */,
+				A01B5DEBA70619436FA454D55E8586C7 /* Pods-HiraganaChangeApp-acknowledgements.markdown */,
+				57854CF38561D4FC5A3BD4DD6684C2BC /* Pods-HiraganaChangeApp-acknowledgements.plist */,
+				469F856035A0309A5514A96713A8A62A /* Pods-HiraganaChangeApp-dummy.m */,
+				41E84A502080DD51E6C3B291540D49C6 /* Pods-HiraganaChangeApp-frameworks.sh */,
+				1DC392BB007E43B1A7D03EE7C70134C8 /* Pods-HiraganaChangeApp-Info.plist */,
+				DE8001BF8AA25F1F6F191EFF23236C02 /* Pods-HiraganaChangeApp-umbrella.h */,
+				BE5388F406DC30436A8D3A6C2F6A63FC /* Pods-HiraganaChangeApp.debug.xcconfig */,
+				4445B06ADACDB513B8E7E00136D33F80 /* Pods-HiraganaChangeApp.release.xcconfig */,
+			);
+			name = "Pods-HiraganaChangeApp";
+			path = "Target Support Files/Pods-HiraganaChangeApp";
+			sourceTree = "<group>";
+		};
+		5B3FAF3D3A5713BB9F4CC163A4D30766 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C2296062D2D030526AB426399B3145B /* Pods_HiraganaChangeApp.framework */,
+				F6E3B8BC238866073523ED9347EED4C6 /* SwiftyTesseract.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849F0015B4352423137A8DD260F5EEC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB777A5A24128CD6654E253394367CAB /* libjpeg.a */,
+				A489015A9AFE90BFF438BCA38F1916C8 /* liblept.a */,
+				F6A6C5338C4ED5C736E8E9EAC0A8385D /* libpng.a */,
+				B1CD3B4179F9521D5D5E762B3F4B0616 /* libtesseract.a */,
+				45061311AE9546CFA5EF9313E64FFAC2 /* libtiff.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6C3560064B0642DD86A521EBBEC503A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39E894375B66267ED4EE4613597ABD08 /* SwiftyTesseract.modulemap */,
+				409782F8EFDE6EAC1F98ABBCBCB1E75F /* SwiftyTesseract.xcconfig */,
+				CA940D6D1E36E1D5977F652523B66CA6 /* SwiftyTesseract-dummy.m */,
+				B3F4E4BAD9FD89E370C6B4F394691315 /* SwiftyTesseract-Info.plist */,
+				A1E7AFA29FB65E88CC95F56416BCE03C /* SwiftyTesseract-prefix.pch */,
+				1679A5EA1E5B25EEFBDC9066D5B76E88 /* SwiftyTesseract-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyTesseract";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				FCDB59A7A27D5252BBAC29FD36C1DB91 /* Pods */,
+				5B3FAF3D3A5713BB9F4CC163A4D30766 /* Products */,
+				EBC8D5C24388C58513518C49AECAF836 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E96D5622A95769943734AC7F58317F4F /* SwiftyTesseract */ = {
+			isa = PBXGroup;
+			children = (
+				7723ABA28E9F6E6C8009FBE5FD802AE7 /* allheaders.h */,
+				981D0F5E0FC7168A4373B9320BFDA665 /* alltypes.h */,
+				F59B98833E4E33A52008769D6CAAC55F /* apitypes.h */,
+				365000623656F02533E7F18EFE0D3F3A /* array.h */,
+				DF0A22AB67F3A9AE6C88AE414B384539 /* arrayaccess.h */,
+				3B234778BA3D22AADB994DEE5428B4E9 /* baseapi.h */,
+				C1C4DD977AE0620297C4646254C404DD /* bbuffer.h */,
+				4D6424E0EF376D93515F7178C25A11A1 /* bilateral.h */,
+				AA3247DE914727BF9E07345110D48AA2 /* bmf.h */,
+				DD2093BB4E261EBEB4ECAA203B9AB0DE /* bmfdata.h */,
+				255B208A3B5A62953A44174D336209EE /* bmp.h */,
+				F7684CDA8DD3C242D0E117F97504D768 /* BoundingBox.swift */,
+				5555125BF753D51F53E0E7D2395F4F28 /* Bundle+pathToTrainedData.swift */,
+				991364C8D64E9FED04431DFC0C900ECD /* capi.h */,
+				214CBCABBD87FA7A4C96701AC84AF16C /* ccbord.h */,
+				DA48AF268E8F236A5C0F3615A1E5103A /* dewarp.h */,
+				89A0C0C5FBC7AEFE224976BF067A8910 /* endianness.h */,
+				545252AF0632391D249235B132A6EEB0 /* EngineMode.swift */,
+				F767BBEC0102F4EF34181A0394A9DE9E /* environ.h */,
+				18CEE9B2BF1E972B34653481D2A1D7DE /* genericvector.h */,
+				BC8EAA022AB03BE403B67CA72FCA3B7F /* gplot.h */,
+				4A7A89FE6C79604E5AF5327713D30AA8 /* heap.h */,
+				4EE65DA990FC6B29083B7B56DB301990 /* helpers.h */,
+				B8C4992FD5C498D74BE94FFDF48358A3 /* imageio.h */,
+				4A0A4A03DE813B798FD8E169A790F9D8 /* jbclass.h */,
+				88F894FAEA5193C57F937F4ABC3C18D7 /* jconfig.h */,
+				01BF8AAD561DD023C59BAB3D978BF86B /* jerror.h */,
+				B7853823A4058EB1EE3AB4CD668ECF75 /* jmorecfg.h */,
+				F3048838180E5743D80F999DFA3DA3A1 /* jpeglib.h */,
+				F04DB1C39B6BF5A54D64D9023E91787D /* LanguageModelDataSource.swift */,
+				1A1E1102C55A6341209B94CCAC9C390A /* LanguageStringConverter.swift */,
+				AA899C17D45372773E85908F3EE11EE1 /* leptwin.h */,
+				F35D0DDFE57A4DE7F1008BD0B9A370F5 /* list.h */,
+				ED87D1CDA179298004F0B26A506596CF /* ltrresultiterator.h */,
+				5A5658C93B78BF6536F4025187A22F78 /* morph.h */,
+				F46F8D0814BB4A951A58D57A2C242823 /* ocrclass.h */,
+				47E08A9B3538F58FB253E734D6AF41C3 /* osdetect.h */,
+				2B55143A8EEFCCA89E8F12F9CD5E0136 /* pageiterator.h */,
+				302A31B1ED7BD69465ACD09FD1EF555F /* pix.h */,
+				9CB5012A5B95ADB69F2D67945D4A181A /* platform.h */,
+				C6547939AA73B13D68AF7E3462168480 /* png.h */,
+				75F282AC79CF8FB7CA54318C374E315A /* pngconf.h */,
+				08903A1D416037A98826F2084969A9B5 /* pnglibconf.h */,
+				7BE91C8BFAEAA1FB12AD9C44BE2D334E /* ptra.h */,
+				3F6210A8EA250ED549C1D72E17CB1E46 /* publictypes.h */,
+				3B953F0521443980230ABA153B273BA8 /* queue.h */,
+				0296B642BF6589F8A491A218C972D889 /* rbtree.h */,
+				47EC3D6F0A09DC77C317499C5E4E413C /* readbarcode.h */,
+				F1A49BB535B8CBA5B0DDF75393751ECC /* recog.h */,
+				C76E328C906E98F8601069BDDCE308CD /* RecognitionLanguage.swift */,
+				D632D071FC825123CFB23326D8F59E39 /* RecognizedBlock.swift */,
+				BA744130DA9A35D455F2DEB40165A68A /* regutils.h */,
+				D546AAAAC99A4E7ECA5D3D3AF945BC70 /* renderer.h */,
+				FE7881D27D0D55D87DEB51E05AB21283 /* resultiterator.h */,
+				8AACF21F0519D476F88E8E3297400A2F /* ResultIteratorLevel.swift */,
+				26A13299C59FB1067470FCA4F85AE32F /* serialis.h */,
+				7078ED2FB29A5EBAC95782BCC85F37BA /* stack.h */,
+				164CAC5CFDEA366128014CB379B92F52 /* String+Extensions.swift */,
+				58B75BE5275D2C485477DB438E350723 /* stringcode.h */,
+				CF4246D4FFC6E044ACB0D87218231ED6 /* strngs.h */,
+				58ECCA135F32A0B5E25E4E008F2D7EA2 /* sudoku.h */,
+				06B5CEC0C5125679318FC36BD9BA8913 /* SwiftyTesseract.h */,
+				83A783169A21B0A50AACE059ED7D918E /* SwiftyTesseract.swift */,
+				A916ADDB34AC1658F5A26B7AFC3ABB13 /* SwiftyTesseractError.swift */,
+				B7EDAF534A6246652C3AE6D6B3195603 /* tess_version.h */,
+				5675AA9D760E53AB9DCFDDA76EACF560 /* tesscallback.h */,
+				C1C5C52749D25CF0C8BD8FD83B87D71C /* TesseractVariableName.swift */,
+				E29CAB942387E048796FCA716FC0E18C /* thresholder.h */,
+				A5D16A992FF4BB529F26D4703FDBE28F /* tiff.h */,
+				EB227E390C537D4A8285E48C872CAB46 /* tiffconf.h */,
+				E8D93DFEB224ECD505BAE5685EED3498 /* tiffio.h */,
+				00EF6822A071411F13546B208AB00175 /* tiffvers.h */,
+				65D77EEF3E8BE4C8C063972506097E44 /* unichar.h */,
+				996F7B6BC66D88A2495FB9C2D5AC0730 /* watershed.h */,
+				849F0015B4352423137A8DD260F5EEC0 /* Frameworks */,
+				A6C3560064B0642DD86A521EBBEC503A /* Support Files */,
+			);
+			name = SwiftyTesseract;
+			path = SwiftyTesseract;
+			sourceTree = "<group>";
+		};
+		EBC8D5C24388C58513518C49AECAF836 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4262776A9FA9B741054DD73320EDD660 /* Pods-HiraganaChangeApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FCDB59A7A27D5252BBAC29FD36C1DB91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E96D5622A95769943734AC7F58317F4F /* SwiftyTesseract */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10D0073AF8DCF0CD19E3909D5026F6FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F0B373150B140E4C5146FE656906A8 /* allheaders.h in Headers */,
+				B787A05CA157DEAE9E2AD1C3851F44AD /* alltypes.h in Headers */,
+				81D568880BCCC5D0B4C9948E6BDE11C1 /* apitypes.h in Headers */,
+				F7EACED21E5EDB96A670438D840BE67F /* array.h in Headers */,
+				C3444BDA4982E3239098FE7B42C6C390 /* arrayaccess.h in Headers */,
+				BD9237A4DDA1F216437F8BCC2CC97B6C /* baseapi.h in Headers */,
+				BE4150D98B1C26C9303206B7F4DA09D1 /* bbuffer.h in Headers */,
+				FCFB038FF2CD6E0007785BE18791BC0D /* bilateral.h in Headers */,
+				0EDED454CD723B8AAE762A605FA9C701 /* bmf.h in Headers */,
+				FF547E8DAF527CD69700DB35224EE92B /* bmfdata.h in Headers */,
+				42729E1C419A73A3DAD57DC016C4C23A /* bmp.h in Headers */,
+				F16B863CC7ED043E48C54D1AC5CBC92F /* capi.h in Headers */,
+				01D575C8F225A42040168B8580D7CEE1 /* ccbord.h in Headers */,
+				919446D64B5BE55BCAEB626FF2D798D5 /* dewarp.h in Headers */,
+				A03ABA4E99AF27B5ABE1543785A33E0C /* endianness.h in Headers */,
+				CEC3D47F1098FE57B9A1106ECFF02883 /* environ.h in Headers */,
+				6D0E2454EFDB58A661E5E9ED6FE22354 /* genericvector.h in Headers */,
+				421C8AFDAE630B9097DF79E63016AAFB /* gplot.h in Headers */,
+				2B106EFF951EBEA0FF94281ED80A30B4 /* heap.h in Headers */,
+				6B600105D57454B433EA2B23F3251D66 /* helpers.h in Headers */,
+				E354F75982EB74FBB009333ECBE9D4BC /* imageio.h in Headers */,
+				BCF977892C2AA6D66A6A953BDC527641 /* jbclass.h in Headers */,
+				A754A85E76693D7E16823E9DB8B8AB0C /* jconfig.h in Headers */,
+				E5BB087F887F6666EC86424527965D1A /* jerror.h in Headers */,
+				440FE2B03F4779E8FA0CA7FDF697D821 /* jmorecfg.h in Headers */,
+				A70FF843DF493782404BD78611DC7E3B /* jpeglib.h in Headers */,
+				B4946CF847BA67510D1FDB9399A02C4E /* leptwin.h in Headers */,
+				FA89642AF7EF48B1FE5B2AB27CEA13AD /* list.h in Headers */,
+				B16BAC0F68CF54A30F067F7E5F00E0A4 /* ltrresultiterator.h in Headers */,
+				34F86C4B043E7852A3EF41D9B1FC80F4 /* morph.h in Headers */,
+				E87F29B9B8A0EBDEFDD66222E655059A /* ocrclass.h in Headers */,
+				72F0225A3C905CF3B4B69739A2392F52 /* osdetect.h in Headers */,
+				AB7F1C7D67867968A8BB6A01EC90DD64 /* pageiterator.h in Headers */,
+				E0C0CEE594FECF517EE6554402E39D08 /* pix.h in Headers */,
+				1D0E6626C3DF603C02919934589745A4 /* platform.h in Headers */,
+				8D799CC9894026986F23F7E9187F43C2 /* png.h in Headers */,
+				1AD781F0E8038C3EB5241C0B6B59D620 /* pngconf.h in Headers */,
+				54E8F3F79732BDB75391BA14ABDAFDA5 /* pnglibconf.h in Headers */,
+				4F7F501F3844F12D9E469E7CE3C26FD8 /* ptra.h in Headers */,
+				199AEA4A791F7D9BD13FB08A838EDD3A /* publictypes.h in Headers */,
+				976CC62C8BE838C9925B23374BD7625A /* queue.h in Headers */,
+				22A165C0CAE7878CE54C5CCF083F4A2E /* rbtree.h in Headers */,
+				BCCDBA6A0EE034D5C9F975E61F5FA456 /* readbarcode.h in Headers */,
+				356B3AC29353AADFBAA8CF5B8E7C8722 /* recog.h in Headers */,
+				B11875741D553F29E193E3890CD16B89 /* regutils.h in Headers */,
+				244697D0F1B7003CA452AF4E06959B55 /* renderer.h in Headers */,
+				CFE722B06F0632206EE9F6AE3B374AB9 /* resultiterator.h in Headers */,
+				2AC2BA05B1063BF8F6BCBF0968A2F7D8 /* serialis.h in Headers */,
+				86F1E48DDBBCA77850C8159DA7772E06 /* stack.h in Headers */,
+				DB077EB9830CCC41EA46B3B8D55997FF /* stringcode.h in Headers */,
+				27662C42DF74AAA15565B5196E0D9ED2 /* strngs.h in Headers */,
+				37BEF23F4B2049217AFEEFA1FAC15FF8 /* sudoku.h in Headers */,
+				44B64A745B1FD8412877004835564237 /* SwiftyTesseract-umbrella.h in Headers */,
+				D96151D34C384B696FB3D7576EBBC1C7 /* SwiftyTesseract.h in Headers */,
+				EA4A1BA30F024245103E9862A90DAF40 /* tess_version.h in Headers */,
+				9B592D98CAE560D191FD68BD203C8DC3 /* tesscallback.h in Headers */,
+				8B2DD460AF59B56F6A5F9219B1123AF6 /* thresholder.h in Headers */,
+				A16A07BEEA3B76EFF654F69F865BA8B8 /* tiff.h in Headers */,
+				F919D320010C3EF2C47934B50E2B37D5 /* tiffconf.h in Headers */,
+				DEB8275C4958336C6824C344D1E6C792 /* tiffio.h in Headers */,
+				4C3D76401BA05EE8E38C853ED9E6F256 /* tiffvers.h in Headers */,
+				A4F3E2FC5063C4F3602ACDB13E315713 /* unichar.h in Headers */,
+				58B75C2BF14C7D6812C20104D45073F8 /* watershed.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D2CE4978AD4D7F95254655D03FD469 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D965461CAC305934538EA744E18767EE /* Pods-HiraganaChangeApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71B30045853BC66FA1F360F44FC5D085 /* Build configuration list for PBXNativeTarget "SwiftyTesseract" */;
+			buildPhases = (
+				10D0073AF8DCF0CD19E3909D5026F6FC /* Headers */,
+				047F01BF1F8C81E3B8B64AE57947B178 /* Sources */,
+				09167016A58C8E9EE2F5E618C553F757 /* Frameworks */,
+				D5C3FFC3C9B6A8369BE90E459AA2838E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyTesseract;
+			productName = SwiftyTesseract;
+			productReference = F6E3B8BC238866073523ED9347EED4C6 /* SwiftyTesseract.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9B80FBDC75847F751A9401C6B16588E /* Pods-HiraganaChangeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A18C09480B8DD4ABA4DC1B48AF83FBB /* Build configuration list for PBXNativeTarget "Pods-HiraganaChangeApp" */;
+			buildPhases = (
+				E4D2CE4978AD4D7F95254655D03FD469 /* Headers */,
+				006AAFF6C2E95AFA9563CC39DC59D36A /* Sources */,
+				6EF8337AB58D4571D7E91B62EB1708A3 /* Frameworks */,
+				4FBCD3E4AF7FABD13F90CCF008F2E93D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694AFD258BC52EA055C6F54549362014 /* PBXTargetDependency */,
+			);
+			name = "Pods-HiraganaChangeApp";
+			productName = "Pods-HiraganaChangeApp";
+			productReference = 1C2296062D2D030526AB426399B3145B /* Pods_HiraganaChangeApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5B3FAF3D3A5713BB9F4CC163A4D30766 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9B80FBDC75847F751A9401C6B16588E /* Pods-HiraganaChangeApp */,
+				5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FBCD3E4AF7FABD13F90CCF008F2E93D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C3FFC3C9B6A8369BE90E459AA2838E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		006AAFF6C2E95AFA9563CC39DC59D36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDA13DB303B93F4A2B6E1C5EC935E2E /* Pods-HiraganaChangeApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047F01BF1F8C81E3B8B64AE57947B178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE615106986D6B2CD8E5ACC43B08498 /* BoundingBox.swift in Sources */,
+				45F2BBC7E12948AFB70C62D7FD94377A /* Bundle+pathToTrainedData.swift in Sources */,
+				2B512754974B944596378E4CAE48348E /* EngineMode.swift in Sources */,
+				A3222935AF8A15234FDFC4ABE1A71FEC /* LanguageModelDataSource.swift in Sources */,
+				58B492A278EF1C484C91EED9850B8E0D /* LanguageStringConverter.swift in Sources */,
+				97EFDE8D797B96B1CE5CB9444445E80E /* RecognitionLanguage.swift in Sources */,
+				35B549A36F10451343C4FBE5254C1BE9 /* RecognizedBlock.swift in Sources */,
+				FA2A991ED2E349B550B46552E0222C48 /* ResultIteratorLevel.swift in Sources */,
+				3914AE7892E0DB25196362A6CC9923E5 /* String+Extensions.swift in Sources */,
+				E753AC3306AFC3D73F413872F2377073 /* SwiftyTesseract-dummy.m in Sources */,
+				16FDE71535603ACDAFC35170A1E14370 /* SwiftyTesseract.swift in Sources */,
+				989394A93F0491C9872C63109165B0A0 /* SwiftyTesseractError.swift in Sources */,
+				E00065A984D90D4663535711B1B8F42F /* TesseractVariableName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		694AFD258BC52EA055C6F54549362014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyTesseract;
+			target = 5FDA8701204211983085669C4E12E6FE /* SwiftyTesseract */;
+			targetProxy = 79C5FE5366D7A5E9989E9C3D75F3C6AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B38676B0E0131DD1A4346E60193A859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409782F8EFDE6EAC1F98ABBCBCB1E75F /* SwiftyTesseract.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyTesseract/SwiftyTesseract-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyTesseract;
+				PRODUCT_NAME = SwiftyTesseract;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31363C0BA6D5D3BA6BD0805277850656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4445B06ADACDB513B8E7E00136D33F80 /* Pods-HiraganaChangeApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiraganaChangeApp/Pods-HiraganaChangeApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiraganaChangeApp/Pods-HiraganaChangeApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		77D6D658B3617D9256998139A1844CB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5388F406DC30436A8D3A6C2F6A63FC /* Pods-HiraganaChangeApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HiraganaChangeApp/Pods-HiraganaChangeApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HiraganaChangeApp/Pods-HiraganaChangeApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F18AC83E95AF28F9F99D33E99DA2852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409782F8EFDE6EAC1F98ABBCBCB1E75F /* SwiftyTesseract.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyTesseract/SwiftyTesseract-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyTesseract/SwiftyTesseract.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyTesseract;
+				PRODUCT_NAME = SwiftyTesseract;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A18C09480B8DD4ABA4DC1B48AF83FBB /* Build configuration list for PBXNativeTarget "Pods-HiraganaChangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D6D658B3617D9256998139A1844CB1 /* Debug */,
+				31363C0BA6D5D3BA6BD0805277850656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71B30045853BC66FA1F360F44FC5D085 /* Build configuration list for PBXNativeTarget "SwiftyTesseract" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B38676B0E0131DD1A4346E60193A859 /* Debug */,
+				7F18AC83E95AF28F9F99D33E99DA2852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
